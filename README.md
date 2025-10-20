@@ -1,21 +1,20 @@
 #V1.0.0
 This extension will loop through enabled products with the visibility of Catalog only and change them to Catalog/Search, this can be done from the command line or added to cron for automation.
 
-#Install
+#
 
-
+# 1) Install
 bin/magento module:enable Merlin_ProductVisibilityFix
 
 bin/magento setup:upgrade
 
-#Dry-Run Check First
 
 
-# 2) (Optional) Check what would change
+# 2) (Optional) Dry-Run Check First
 
 bin/magento merlin:product:fix-visibility --dry-run --batch-size=1000
 
-#Run
+
 
 # 3) Apply changes + reindex search
 
