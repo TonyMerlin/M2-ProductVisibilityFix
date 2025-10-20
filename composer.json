@@ -1,0 +1,17 @@
+{
+  "name": "merlin/module-product-visibility-fix",
+  "description": "Fix product visibility from Catalog-only to Catalog, Search and reindex search.",
+  "type": "magento2-module",
+  "license": "proprietary",
+  "autoload": {
+  "files": [
+  "registration.php"
+ ],
+  "psr-4": {
+   "Merlin\\ProductVisibilityFix\\": ""
+ }
+},
+  "require": {
+  "php": ">=8.1"
+ }
+}
